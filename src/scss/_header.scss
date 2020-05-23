@@ -28,7 +28,7 @@
 }
 
 .header ul li {
-  margin: 0 5rem;
+  margin: 0 6.5rem;
 }
 
 .logo {
@@ -51,6 +51,14 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
+
+  .dropbtn {
+    font-size: 1.5rem;
+  }
+
+  .dropdown-content a {
+    font-size: 1.5rem;
+  }
 }
 
 .dropbtn {
@@ -98,7 +106,11 @@
 
 @media screen and (max-width: 1000px) {
   .header {
-    font-size: 5rem;
+    font-size: 6rem;
+  }
+  
+  .dropbtn {
+    font-size: 1.5rem;
   }
 
   .header ul {
