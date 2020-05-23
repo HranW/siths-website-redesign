@@ -27,22 +27,29 @@
   background-color: #151515;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 .header ul li {
   margin: 0 5rem;
 }
 
 .logo {
   position: absolute;
+  z-index: 3;
 }
 
 .logo-sticky {
   position: sticky;
   height: 12.8rem;
   width: 12.8rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  font-size: 3.5rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
