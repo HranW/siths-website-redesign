@@ -27,15 +27,21 @@
   background-color: #151515;
 }
 
+.n2 ul {
+  width: 80%;
+}
+
 .logo {
-  position: fixed;
-  z-index: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .logo-sticky {
-  position: sticky;
+  position: fixed;
   height: 10rem;
-  width: 10 rem;
+  width: 10rem;
+  z-index: 3;
 }
 
 .sticky {
@@ -68,6 +74,7 @@
   position: relative;
   display: inline-block;
   margin: 0 5rem;
+  z-index: 4;
 }
 
 .dropdown-content {
@@ -99,11 +106,26 @@
   color: #ffdd03;
 }
 
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.burger div {
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: #fbc403;
+  margin: 0.3rem;
+}
+
 @media screen and (max-width: 1000px) {
   .header {
     font-size: 6rem;
   }
-  
+
   .dropbtn {
     font-size: 1.5rem;
   }
@@ -115,5 +137,32 @@
   .logo-sticky {
     width: 8rem;
     height: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sticky {
+    display: none;
+  }
+
+  .n1 ul {
+    display: none;
+  }
+
+  .n2 ul {
+    position: absolute;
+    right: 0rem;
+    height: 92vh;
+    top: 8vh;
+    background-color: #151515;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .logo-sticky {
+    position: fixed;
+    left: 0;
   }
 }
