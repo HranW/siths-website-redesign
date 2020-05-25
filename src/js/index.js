@@ -1,2 +1,3 @@
-import {stickyFunction} from './sticky.js';
-console.log("hello");
+import { navFunc } from "./nav";
+
+navFunc();
