@@ -10,7 +10,6 @@ var sticky = nav.offsetTop;
 const navDrop = () => {
   const burger = document.querySelector(".burger");
   const navAnimation = document.querySelector(".nav-links-two");
-  const dropbtnAnimation = document.querySelectorAll(".dropbtn");
   const lineOne = document.querySelector(".line1");
   const lineTwo = document.querySelector(".line2");
   const lineThree = document.querySelector(".line3");
@@ -20,7 +19,7 @@ const navDrop = () => {
     lineOne.classList.toggle("line1-active");
     lineTwo.classList.toggle("line2-active");
     lineThree.classList.toggle("line3-active");
-    dropbtnAnimation.classList.toggle(".dropbtn-active");
+    console.log(1+1);
   });
 };
 

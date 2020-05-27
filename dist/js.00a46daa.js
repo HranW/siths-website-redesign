@@ -136,7 +136,6 @@ var sticky = nav.offsetTop;
 var navDrop = function navDrop() {
   var burger = document.querySelector(".burger");
   var navAnimation = document.querySelector(".nav-links-two");
-  var dropbtnAnimation = document.querySelectorAll(".dropbtn");
   var lineOne = document.querySelector(".line1");
   var lineTwo = document.querySelector(".line2");
   var lineThree = document.querySelector(".line3");
@@ -145,7 +144,7 @@ var navDrop = function navDrop() {
     lineOne.classList.toggle("line1-active");
     lineTwo.classList.toggle("line2-active");
     lineThree.classList.toggle("line3-active");
-    dropbtnAnimation.classList.toggle(".dropbtn-active");
+    console.log(1 + 1);
   });
 };
 
@@ -205,7 +204,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52851" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55256" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
