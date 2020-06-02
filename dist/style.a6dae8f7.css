@@ -24,7 +24,7 @@ header {
   font-family: "Poppins", sans-serif;
 }
 
-header .nav-links-one-container li a {
+.nav-links-one-container li a {
   font-size: 1.5rem;
   letter-spacing: 0.15rem;
   color: #fbc403;
@@ -35,7 +35,7 @@ header .nav-links-one-container li a {
   height: 4rem;
   display: flex;
   align-items: center;
-  background-color: #30393a;
+  background-color: #30393A;
 }
 
 .nav-links-two {
@@ -241,7 +241,7 @@ main {
     display: block;
   }
 }
-.homepage {
+.homepage-video {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -249,7 +249,6 @@ main {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  font-family: "Poppins", sans-serif;
 }
 
 .video-container {
@@ -265,57 +264,126 @@ main {
   min-width: 100%;
 }
 
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: "Poppins", sans-serif;
+}
+
 .homepage-overlay {
-  right: 0;
-  top: 0;
+  display: flex;
+  justify-content: center;
   position: absolute;
-  z-index: 1;
-  opacity: 0.1;
-  background-color: #ffdd03;
-  clip-path: polygon(81% 0, 100% 0, 100% 100%, 51% 100%);
-  height: 100%;
+  background-color: #fbc503d2;
   width: 100%;
+  height: 35vh;
+  z-index: 1;
 }
 
 .homepage-main {
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  width: 25%;
+  width: 50%;
+  height: 35vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
-.homepage-main .homepage-statistics {
+.homepage-main p {
+  font-weight: 400;
+  color: white;
+  line-height: 3rem;
   font-size: 2rem;
-  letter-spacing: 0.2rem;
-  color: #ffffff;
+  margin-top: 1rem;
 }
-.homepage-main .btn {
-  margin-top: 5rem;
-  box-shadow: 0px 0px 0px 0px #3dc21b;
-  background-color: #ffdd03;
-  border-radius: 28px;
-  border: 1px solid #9e9e25;
+
+.btn {
+  box-shadow: inset 0px 1px 0px 0px #ffdd03;
+  background: linear-gradient(to bottom, #fbc503 5%, #ffdd03 100%);
+  background-color: #fbc503;
+  border-radius: 5px;
+  border: 1px solid #9c7a00;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
   font-size: 30px;
-  padding: 15px 30px;
+  font-weight: bold;
+  padding: 10px 35px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #2f6627;
+  text-shadow: 0px 1px 0px #fbc503;
 }
-.homepage-main .btn:hover {
+
+.btn:hover {
+  background: linear-gradient(to bottom, #ffdd03 5%, #fbc503 100%);
   background-color: #ffdd03;
 }
-.homepage-main .btn:active {
+
+.btn:active {
   position: relative;
   top: 1px;
 }
 
+.btn a {
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 768px) {
+  .homepage-overlay {
+    height: 50vh;
+  }
+
+  .homepage-main {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+}
 .slideshow {
   font-size: 5rem;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #c7c7c7;
+}
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #666666;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 * {
