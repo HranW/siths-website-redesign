@@ -301,7 +301,7 @@ main {
   box-shadow: inset 0px 1px 0px 0px #ffdd03;
   background: linear-gradient(to bottom, #fbc503 5%, #ffdd03 100%);
   background-color: #fbc503;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 1px solid #9c7a00;
   display: inline-block;
   cursor: pointer;
@@ -340,8 +340,47 @@ main {
     font-size: 20px;
   }
 }
-.slideshow {
-  font-size: 5rem;
+.dates {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.dates-container {
+  height: 50vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #151515;
+}
+.dates-container h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #fbc403;
+  text-shadow: 1px 1px #ca9f01;
+}
+
+.subdates-container {
+  height: 15%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.subdates-container span {
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.month {
+  color: #354359;
+  text-transform: uppercase;
+}
+
+.day {
+  color: #c41019;
 }
 
 ::-webkit-scrollbar {
