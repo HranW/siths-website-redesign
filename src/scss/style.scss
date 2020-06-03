@@ -7,3 +7,20 @@
   text-decoration: none;
   list-style: none;
 }
+#News-Header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.News-Items{
+  display: flex;
+  flex-direction: column;
+}
+.New-img{
+  height: 20rem;
+}
+#content-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
