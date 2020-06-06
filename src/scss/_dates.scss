@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .dates-container {
@@ -39,4 +40,17 @@
 
 .day {
   color: #c41019;
+}
+
+@media only screen and (max-width: 768px) {
+  .dates {
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .dates-container {
+    height: auto;
+    width: 100%;
+  }
 }

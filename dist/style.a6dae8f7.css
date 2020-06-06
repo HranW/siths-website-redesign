@@ -294,7 +294,7 @@ main {
   color: white;
   line-height: 3rem;
   font-size: 2rem;
-  margin-top: 1rem;
+  margin: 1rem 2rem 0rem;
 }
 
 .btn {
@@ -335,9 +335,13 @@ main {
     width: 100%;
     height: 50vh;
   }
+  .homepage-main p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
 
   .btn {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .dates {
@@ -345,6 +349,7 @@ main {
   display: flex;
   justify-content: center;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .dates-container {
@@ -383,6 +388,18 @@ main {
   color: #c41019;
 }
 
+@media only screen and (max-width: 768px) {
+  .dates {
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .dates-container {
+    height: auto;
+    width: 100%;
+  }
+}
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
