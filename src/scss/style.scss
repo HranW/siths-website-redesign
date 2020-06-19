@@ -1,3 +1,5 @@
+@import "_news.scss";
+
 * {
   padding: 0;
   margin: 0;
@@ -6,59 +8,4 @@
   scroll-behavior: smooth;
   text-decoration: none;
   list-style: none;
-}
-.News{
-  display: flex;
-  justify-content: center;
-  background-color: black;
-}
-#News-Container{
-  width: 80%;
-}
-#News-Header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 5rem;
-  color: white;
-}
-#content-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  height: 25rem;
-}
-.News-Items{
-  display: flex;
-  flex-direction: column;
-  height: inherit;
-  background-color: white;
-  border-radius: 1rem;
-}
-.New-img{
-  width: inherit;
-  height: 25rem;
-  border-radius: 1rem;
-  border-style: groove;
-  border-color: gold;
-}
-.News-Items:hover .New-img{
-  opacity: .1;
-}
-.News-Items:hover .caption{
-  opacity: 1;
-}
-.caption{
-  height: inherit;
-  width: inherit;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: large;
-  font-weight: bold;
-  position: relative;
-  top: -25%;
-  transition: .5s ease;
-  opacity: 0;
-  
 }

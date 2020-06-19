@@ -1,14 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  scroll-behavior: smooth;
-  text-decoration: none;
-  list-style: none;
-}
-
 .News {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,7 +63,7 @@
 }
 
 .News-Items:hover .New-img {
-  opacity: .1;
+  opacity: 0.1;
 }
 
 .News-Items:hover .caption {
@@ -96,8 +85,19 @@
   font-weight: bold;
   position: relative;
   top: -25%;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   opacity: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
