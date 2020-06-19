@@ -1,16 +1,124 @@
+@import "_variables.scss";
 
-.footer{
-    background-color: #6D6C6C;
-    align-items: center;
-    justify-content: center;
+.footer {
+  background-color: #6d6c6c;
+  align-items: center;
+  justify-content: center;
 }
 
+.footer-inner-row-one {
+}
 
-.footer-inner-row-one{}
+.logo {
+}
 
-.logo{}
+.h1 {
+}
 
-.h1{}
+.footer-inner-row-two {
+}
 
-.footer-inner-row-two{}
+.footer1 {
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.15rem;
+  @include phone {
+  }
+  @include tablet {
+  }
+  @include desktop {
+  }
+}
 
+.footer-inner {
+  display: flex;
+  flex-direction: row;
+  color: #fbc403;
+}
+
+.footer-row-one {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 5vh;
+}
+
+.logo {
+  height: 17vh;
+  @include phone {
+    height: 8vh;
+    margin: 10px;
+  }
+}
+
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-left: 2rem;
+  @include phone {
+    font-size: 1rem;
+  }
+}
+
+.footer-row-two {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  justify-content: space-around;
+  list-style: none;
+  @include phone {
+    font-size: 1rem;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5rem;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+  margin-left: 5vh;
+  @include phone {
+    font-size: 1rem;
+  }
+}
+
+.social-media-logos {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-twitter {
+  height: 2vh;
+  width: 2vh;
+}
+
+.logo-facebook {
+  height: 2vh;
+  width: 2vh;
+}
+
+.logo-instagram {
+  height: 2vh;
+  width: 2vh;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+  margin-left: 2vh;
+  @include phone {
+    font-size: 1rem;
+  }
+}
