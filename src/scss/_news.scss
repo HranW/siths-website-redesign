@@ -1,96 +1,37 @@
-@import "_variables.scss";
-.News {
+.news {
   display: flex;
+  width: 100%;
+  height: 50vh;
   justify-content: center;
-  background-color: #0a0a0a;
   font-family: "Raleway", sans-serif;
-  @include phone {
-  }
-  @include tablet {
-  }
-  @include desktop {
-  }
 }
+
 #News-Container {
-  width: 80%;
-  @include phone {
-    width: inherit;
-  }
-  @include tablet {
-    width: 80%;
-  }
-  @include desktop {
-    width: 80%;
-  }
-}
-#News-Header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  color: #fbc431;
-  text-align: center;
-  @include phone {
-    font-size: 8vw;
-  }
-  @include tablet {
-    font-size: 1vw;
-  }
-  @include desktop {
-    font-size: 2.5vw;
-  }
+  width: 80%;
 }
+
 #content-container {
+  width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 25rem;
-  @include phone {
-    display: flex;
-    height: 70rem;
-    flex-direction: column;
-    justify-content: inherit;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  @include tablet {
-    flex-direction: row;
-    height: 25rem;
-    justify-content: space-evenly;
-  }
-  @include desktop {
-    flex-direction: row;
-    height: 25rem;
-    justify-content: space-evenly;
-  }
 }
+
 .News-Items {
   display: flex;
   flex-direction: column;
-  height: inherit;
+  width: 18%;
+  height: 100%;
   background-color: white;
   border-radius: 1rem;
-  @include phone {
-    height: 22rem;
-    width: inherit;
-  }
-  @include tablet {
-  }
-  @include desktop {
-  }
 }
 .New-img {
-  width: inherit;
-  height: 25rem;
+  width: 100%;
+  height: 20rem;
   border-radius: 1rem;
-  border-style: groove;
-  border-color: gold;
-  @include phone {
-    height: 22rem;
-  }
-  @include tablet {
-  }
-  @include desktop {
-  }
 }
 .News-Items:hover .New-img {
   opacity: 0.1;
@@ -100,21 +41,40 @@
 }
 .caption {
   height: inherit;
-  width: inherit;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  color: #fbc403;
   text-align: center;
-  font-size: large;
+  font-size: 2.5rem;
+  margin-top: 1rem;
   font-weight: bold;
   position: relative;
   top: -25%;
   transition: 0.5s ease;
   opacity: 0;
-  @include phone {
-    height: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .news {
+    height: 130vh;
   }
-  @include tablet {
+  #content-container {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
-  @include desktop {
+  .News-Items {
+    width: 55%;
+    height: 20%;
+    background-color: transparent;
+  }
+  .New-img {
+    height: 18rem;
+  }
+  .caption {
+    font-size: 2rem;
+    margin-top: 6rem;
+    opacity: 1;
   }
 }
