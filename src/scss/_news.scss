@@ -1,10 +1,28 @@
+@import "_variables.scss";
 .News {
   display: flex;
   justify-content: center;
   background-color: black;
+  @include phone{ 
+  }
+  @include tablet{
+
+  }
+  @include desktop{
+
+  }
 }
 #News-Container {
   width: 80%;
+    @include phone{
+      width: inherit;
+  }
+  @include tablet{
+      width: 80%;
+  }
+  @include desktop{
+      width: 80%;
+  }
 }
 #News-Header {
   display: flex;
@@ -12,12 +30,39 @@
   align-items: center;
   font-size: 5rem;
   color: white;
+  text-align: center;
+  @include phone{ 
+  }
+  @include tablet{
+
+  }
+  @include desktop{
+
+  }
 }
 #content-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   height: 25rem;
+  @include phone{
+    display: flex;
+    height: 70rem;
+    flex-direction: column;
+    justify-content: inherit;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  @include tablet{
+    flex-direction: row;
+    height: 25rem;
+    justify-content: space-evenly;
+  }
+  @include desktop{
+    flex-direction: row;
+    height: 25rem;
+    justify-content: space-evenly;
+  }
 }
 .News-Items {
   display: flex;
@@ -25,6 +70,16 @@
   height: inherit;
   background-color: white;
   border-radius: 1rem;
+  @include phone{ 
+    height: 22rem;
+    width: inherit;
+  }
+  @include tablet{
+
+  }
+  @include desktop{
+
+  }
 }
 .New-img {
   width: inherit;
@@ -32,6 +87,15 @@
   border-radius: 1rem;
   border-style: groove;
   border-color: gold;
+  @include phone{ 
+    height: 22rem;
+  }
+  @include tablet{
+
+  }
+  @include desktop{
+
+  }
 }
 .News-Items:hover .New-img {
   opacity: 0.1;
@@ -51,4 +115,14 @@
   top: -25%;
   transition: 0.5s ease;
   opacity: 0;
+  @include phone{ 
+    height: 0;
+
+  }
+  @include tablet{
+
+  }
+  @include desktop{
+
+  }
 }
