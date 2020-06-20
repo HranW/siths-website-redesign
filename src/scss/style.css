@@ -19,7 +19,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   #News-Container {
     width: 80%;
   }
@@ -52,7 +52,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   #News-Header {
     font-size: 1vw;
   }
@@ -100,7 +100,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   #content-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
