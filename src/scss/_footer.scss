@@ -118,6 +118,9 @@
   list-style: none;
   text-align: center;
   margin-left: 2vh;
+  a {
+    color: #fbc403;
+  }
   @include phone {
     font-size: 1rem;
   }

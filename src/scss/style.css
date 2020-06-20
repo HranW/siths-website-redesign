@@ -156,6 +156,10 @@
   margin-left: 2vh;
 }
 
+.links a {
+  color: #fbc403;
+}
+
 @media (min-width: 400px) {
   .links {
     font-size: 1rem;
