@@ -2,42 +2,41 @@
 .News {
   display: flex;
   justify-content: center;
-  background-color: black;
-  @include phone{ 
+  background-color: #0a0a0a;
+  font-family: "Raleway", sans-serif;
+  @include phone {
   }
-  @include tablet{
-
+  @include tablet {
   }
-  @include desktop{
-
+  @include desktop {
   }
 }
 #News-Container {
   width: 80%;
-    @include phone{
-      width: inherit;
+  @include phone {
+    width: inherit;
   }
-  @include tablet{
-      width: 80%;
+  @include tablet {
+    width: 80%;
   }
-  @include desktop{
-      width: 80%;
+  @include desktop {
+    width: 80%;
   }
 }
 #News-Header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 5rem;
-  color: white;
+  color: #fbc431;
   text-align: center;
-  @include phone{ 
+  @include phone {
+    font-size: 8vw;
   }
-  @include tablet{
-
+  @include tablet {
+    font-size: 1vw;
   }
-  @include desktop{
-
+  @include desktop {
+    font-size: 2.5vw;
   }
 }
 #content-container {
@@ -45,7 +44,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   height: 25rem;
-  @include phone{
+  @include phone {
     display: flex;
     height: 70rem;
     flex-direction: column;
@@ -53,12 +52,12 @@
     align-items: center;
     justify-content: space-evenly;
   }
-  @include tablet{
+  @include tablet {
     flex-direction: row;
     height: 25rem;
     justify-content: space-evenly;
   }
-  @include desktop{
+  @include desktop {
     flex-direction: row;
     height: 25rem;
     justify-content: space-evenly;
@@ -70,15 +69,13 @@
   height: inherit;
   background-color: white;
   border-radius: 1rem;
-  @include phone{ 
+  @include phone {
     height: 22rem;
     width: inherit;
   }
-  @include tablet{
-
+  @include tablet {
   }
-  @include desktop{
-
+  @include desktop {
   }
 }
 .New-img {
@@ -87,14 +84,12 @@
   border-radius: 1rem;
   border-style: groove;
   border-color: gold;
-  @include phone{ 
+  @include phone {
     height: 22rem;
   }
-  @include tablet{
-
+  @include tablet {
   }
-  @include desktop{
-
+  @include desktop {
   }
 }
 .News-Items:hover .New-img {
@@ -115,14 +110,11 @@
   top: -25%;
   transition: 0.5s ease;
   opacity: 0;
-  @include phone{ 
+  @include phone {
     height: 0;
-
   }
-  @include tablet{
-
+  @include tablet {
   }
-  @include desktop{
-
+  @include desktop {
   }
 }
